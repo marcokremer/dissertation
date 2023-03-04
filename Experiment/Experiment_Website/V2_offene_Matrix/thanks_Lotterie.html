@@ -1,0 +1,21 @@
+<HTML>
+<HEAD>
+<TITLE>Fertig</TITLE>
+<link rel="stylesheet" href="mlweb.css" type="text/css">
+</head>
+
+<body>
+<H1 align="center">&nbsp;</H1>
+<H1 align="center">Danke!</H1>
+ <P align="center">Vielen Dank für deine Teilnahme am Experiment. Du hast es geschafft und bis zum Ende durchgehalten. Respekt und Anerkennung für diese tolle Leistung zum Wohle der Wissenschaft. Als kleines Dankeschön erhälst du mit nachfolgendem Code dein Teilnahmelos für die große Bücher-Gutschein-Verlosung.  </p>
+ <div id="gutschein" align="center"></div>
+ <p align="center">Die Auswertung und dein Ergebnis bei der Verlosung findest du in Kürze unter diesem <a href="Ergebnisankuendigung.html">Link<a/>. Wenn du dir diese Seite als Bookmark abspeicherst, findest du den Link später schneller wieder. <BR>Du kannst dieses Fenster jetzt schließen.</P>
+<script language="javascript">
+var code="";
+var inhalt=document.cookie;
+var code_start=inhalt.indexOf("AFH")+3;
+var code_stop=inhalt.indexOf("TXT");
+code="<b>" + inhalt.slice(code_start,code_stop)+ "<\/b>";
+document.getElementById("gutschein").innerHTML=code;
+</script>
+</body></html>
