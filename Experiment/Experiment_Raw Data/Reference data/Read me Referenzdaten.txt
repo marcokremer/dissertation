@@ -1,0 +1,10 @@
+#########################################
+##########Read me Referenzdaten##########
+Version: 1.0
+Stand: 22.03.2018
+#########################################
+Beginn:
+
+Referenzdaten wurden als Analysereferenz zu den Experimentdaten im Vorfeld des Experiments (pre-experimentation) erhoben. Sie sind das Ergebnis der Bearbeitung von Aufgaben äquivalent zum Experiment durch instruierte Spieler. Diese Spieler verfolgen bei der Aufgabenbearbeitung jeweils eine bestimmte Heuristik aus dem betrachteten Heuristik-Kanon, bzw. begehen charakteristische Besonderheiten in der Mausnutzung. Die so erhobenen Daten dienen der Identifizierung von verwendeten Heuristiken und Besonderheiten in der Mausnutzung. Die Identifizierung erfolgt durch Vergleich der Experimentdaten mit den Referenzdaten.  
+
+Ende.
