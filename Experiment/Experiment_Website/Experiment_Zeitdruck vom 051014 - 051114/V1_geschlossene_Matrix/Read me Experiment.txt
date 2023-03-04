@@ -1,0 +1,9 @@
+/+++++++Read me Experiment+++++++++/
+
+1. Alle Dateien, die dieser Ordner enthält, müssen zum Zeitpunkt des Experiments auf dem Server verfügbar sein, damit die Experimentdateien funktionieren.
+2. Die Dateien mit einem zusätzlichen m am Anfang des Namens sind die für das Experiment modifizierten Dateien. M steht für modifiziert.
+3. Die Datei "mmlweb.js" (ursprünglich "mlweb.js") wurd im wesentlichen in ihrer Funktion switchcont() angepasst, sodass der Proband ein Matrixelement unabhängig 
+vom vorhergehenden öffnen und schließen kann.
+4. Die Dateien im Ordner Designer wurden ebenfalls so angepasst, dass der Designer standardmäßig modifizierte Experimentdateien erstellt, also *.php-Dateien,
+die auf die mmlweb.js zurückgreifen zur Interpretation von Probandeneingaben.
+5. Die Datei readme_php.txt enthält weitere Erläuterungen zu den einzelnen Dateien.
