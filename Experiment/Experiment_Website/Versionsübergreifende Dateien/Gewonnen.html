@@ -1,0 +1,53 @@
+<HTML>
+<HEAD>
+<TITLE>Gewonnen</TITLE>
+<link rel="stylesheet" href="mlweb.css" type="text/css">
+<script language="javascript">
+
+if (navigator.cookieEnabled == true) {} 
+else{alert("Für diese Seite müssen Cookies aktiviert sein!");}
+var inhalt=document.cookie;
+if (inhalt.indexOf("gewinn=")>-1){var text=inhalt.indexOf("gewinn=");}
+var gewinn_inhalt=inhalt.slice(text+7,text+9);
+document.all.gewinn.innerText=gewinn_inhalt;
+if (inhalt.indexOf("gewinncode=")>-1){var text_code=inhalt.indexOf("gewinncode=");}
+var gewinn_code=inhalt.slice(text_code+11,text_code+22);
+document.getElementById("gewinncode").value=gewinn_code;
+function FokusaufKnopf()
+{
+document.getElementById("email").focus();
+}
+</script>
+<style>
+#footer {
+    position:fixed;
+    bottom:0px;
+    font-size: 0.9em;
+    background:#fed; border: 1px solid silver;
+    text-align:center;
+    padding:0.1em;
+    width:100%;
+</style>
+</head>
+<body onload=FokusaufKnopf()>
+<h1 align=center>Strategische Entscheidungen unter Zeitdruck<br>&diams;&clubs;&spades;&hearts;<br>Das Experiment</h1>
+
+<form action="141001_Ergebnis_Test.php" method="post" accept-charset=utf-8>
+<input type=hidden id="gewinncode" value="">
+<p></p>
+<p></p>
+
+<TABLE><TR><TD style="width:350px"></TD><TD><br><p>Schön, dass du da bist! Aber jetzt habe ich zur Abwechselung mal etwas für dich: 
+du hast einen</p><p id="gewinn"> <a href="http://www.buecher.de/"><I>buecher.de</I></a>-Gutschein <b>gewonnen!</b> Bitte trage unten deine 
+Emailadresse ein. Ich werde dir dann umgehend den Gutschein übersenden.</p>
+<br><br>Viel Spaß mit deinem Gewinn wünscht</p>
+<p style="font: italic; text-align:right">- Marco Kremer, <span style="font-variant:small-caps; font-size:80%">Zeitdruck-Experiment</span></p>
+</TD></TR>
+
+<TR><TD style="width:350px"></TD><TD><input id="email" type="text" name="email" value="" size="20" maxlength="50"> 
+<input type="submit" name="submit" value="abschicken" style="font-weight: bold;"></TD></TR>
+</TABLE>
+</form>
+<div id="footer" align="center">Infos bitte an: <a href=mailto:ZeitdruckExp@hsu-hh.de>ZeitdruckExp@hsu-hh.de</a><br>Dieses Experiment wird unterstützt von den <I>Freunden und Förderern der Helmut-Schmidt-Universität Hamburg e.V. <b>.</b></I></div>
+</body></html>
+

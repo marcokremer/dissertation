@@ -1,0 +1,17 @@
+HSU			"HSU"	Startseite_Experiment_default.html	http://www2.hsu-hh.de/wbox0024/writable/Experiment_Zeitdruck_V3/Startseite_Experiment_default.html
+Facebook		"fb"	Startseite_Experiment_fb.html		http://goo.gl/Ft4rXF
+Twitter			"tw"	Startseite_Experiment_tw.html		http://goo.gl/GaqyDA
+Psychologie heute	"ph"	Startseite_Experiment.html		http://www.psychologie-heute.de/service/mitmachen/ mit link zu http://www2.hsu-hh.de/wbox0024/writable/Experiment_Zeitdruck_V3/Startseite_Experiment_default.html
+psychologie.forum	"pf"	Startseite_Experiment_pf.html		http://goo.gl/MWSYNf
+soziologie.forum	"sf"	Startseite_Experiment_sf.html		http://goo.gl/WhJxAy
+mydealz.de		"md"	Startseite_Experiment_md.html		http://goo.gl/CIzwdk
+gutscheine.de		"ge"	Startseite_Experiment_ge.html		http://goo.gl/EiwTbV
+gutscheinsammler.de	"gs"	Startseite_Experiment_gs.html		http://goo.gl/5AcSHQ
+sparwelt.de		"sw"	Startseite_Experiment_sw.html		http://goo.gl/G21ebf
+gratisland.forum	"gl"	Startseite_Experiment_gl.html		http://goo.gl/0bgh4Y
+studis-online.de	"so"	Startseite_Experiment_so.html		http://goo.gl/yWu1Zy
+FüAkBw			"fa"	Startseite_Experiment_fa.html		http://goo.gl/W1M9C6
+uni göttingen		"ug"	Startseite_Experiment_ug.html		http://goo.gl/aj65tR
+uni potsdam		"up"	Startseite_Experiment_up.html		http://goo.gl/4RcTFM
+andere uni		"au"	Startseite_Experiment_au.html		http://goo.gl/igEiFV
+		

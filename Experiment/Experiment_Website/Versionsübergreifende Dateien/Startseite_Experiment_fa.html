@@ -1,0 +1,43 @@
+<HTML>
+<HEAD>
+<TITLE>Startseite Experiment</TITLE>
+<link rel="stylesheet" href="mlweb.css" type="text/css">
+<script language="javascript">
+
+if (navigator.cookieEnabled == true) {} 
+else{alert("Für diese Seite müssen Cookies aktiviert sein!");}
+document.cookie="fuak";
+function FokusaufKnopf()
+{
+document.getElementById("Button1").focus();
+}
+</script>
+<style>
+#footer {
+    position:fixed;
+    bottom:0px;
+    font-size: 0.9em;
+    background:#fed; border: 1px solid silver;
+    text-align:center;
+    padding:0.1em;
+    width:100%;
+</style>
+</head>
+<body onload=FokusaufKnopf()>
+<h1 align=center>Strategische Entscheidungen unter Zeitdruck<br>&diams;&clubs;&spades;&hearts;<br>Das Experiment</h1>
+
+<form>
+<p></p>
+<p></p>
+
+
+<TABLE><TR><TD style="width:350px"></TD><TD rowspan=2><br><p>Das Ziel: Wie verhalten sich Menschen bei strategischen Entscheidungen, wenn sie unter Zeitdruck stehen? Worauf achten sie? Welche Überlegungen stellen sie dabei an? 
+Diesen Fragen geht das vorliegende wissenschaftliche Experiment nach.</p> <p> Die Aufgabe: Vier Runden à vier Spiele - 16 Entscheidungen in insgesamt maximal 14 Minuten. Alle Entscheidungssituationen sind reduziert auf ihre Verbindung 
+zwischen Strategiewahl und daraus resultierender Auszahlung. Die Maus ist das wichtigste Hilfsmittel für die Bearbeitung der Aufgabenstellungen, ihre Bewegung wird aufgezeichnet und analysiert.</p><p>Der Lohn: das erfüllende Gefühl, der Wissenschaft zu dienen! Im Ranking die Nase vorn zu haben oder 
+zumindest nicht Letzter zu werden, kann ebenfalls erhebend wirken.<br><br><br>Allen Teilnehmern viel Erfolg!</p>
+<p style="font: italic; text-align:right">- Marco Kremer, <span style="font-variant:small-caps; font-size:80%">Zeitdruck-Experiment</span></p></TD></TR>
+<TR><TD style="width:200px"><input type="button" name="Button1" value="Am Experiment teilnehmen" style="height: 100px; font-weight: bold;" onClick="window.location.href='141001_fragebogen_fueakbw.html'"></TD><TD></TD></TR></TABLE>
+</form>
+<div id="footer" align="center">Infos bitte an: <a href=mailto:ZeitdruckExp@hsu-hh.de>ZeitdruckExp@hsu-hh.de</a><br>Dieses Experiment wird unterstützt von den <I>Freunden und Förderern der Helmut-Schmidt-Universität Hamburg e.V. <b>.</b></I></div>
+</body></html>
+

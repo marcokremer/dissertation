@@ -1,0 +1,46 @@
+<HTML>
+<HEAD>
+<TITLE>Auswertung</TITLE>
+<link rel="stylesheet" href="mlweb.css" type="text/css">
+<script language="javascript">
+
+if (navigator.cookieEnabled == true) {} 
+else{alert("Für diese Seite müssen Cookies aktiviert sein!");}
+document.cookie="ph";
+function FokusaufKnopf()
+{
+document.getElementById("gewinncode").focus();
+}
+</script>
+<style>
+#footer {
+    position:fixed;
+    bottom:0px;
+    font-size: 0.9em;
+    background:#fed; border: 1px solid silver;
+    text-align:center;
+    padding:0.1em;
+    width:100%;
+</style>
+</head>
+<body onload=FokusaufKnopf()>
+<h1 align=center>Strategische Entscheidungen unter Zeitdruck<br>&diams;&clubs;&spades;&hearts;<br>Das Experiment</h1>
+
+<form action="141001_Ergebnis_Test.php" method="post" accept-charset=utf-8>
+<p></p>
+<p></p>
+
+<TABLE><TR><TD style="width:350px"></TD><TD><br><p>Schön, dass du da bist! Die Auswertung des Experiments ist abgeschlossen. 
+Bitte trage deinen Gewinncode im untenstehenden Feld ein und erfahre, ob du gewonnen hast. In diesem Falle wirst du aufgefordert, in einem Feld 
+deine Emailadresse zu hinterlassen, an welche ich dir den <a href="http://www.buecher.de/"><I>buecher.de</I></a>-Gutschein übersende.</p>
+<br><br>Vielen Dank für deine Teilnahme!</p>
+<p style="font: italic; text-align:right">- Marco Kremer, <span style="font-variant:small-caps; font-size:80%">Zeitdruck-Experiment</span></p>
+</TD></TR>
+
+<TR><TD style="width:350px"></TD><TD><input type="text" name="gewinncode" value="" size="20" maxlength="30"> 
+<input type="submit" name="submit" value="Habe ich gewonnen?" style="font-weight: bold;"></TD></TR>
+</TABLE>
+</form>
+<div id="footer" align="center">Infos bitte an: <a href=mailto:ZeitdruckExp@hsu-hh.de>ZeitdruckExp@hsu-hh.de</a><br>Dieses Experiment wird unterstützt von den <I>Freunden und Förderern der Helmut-Schmidt-Universität Hamburg e.V. <b>.</b></I></div>
+</body></html>
+

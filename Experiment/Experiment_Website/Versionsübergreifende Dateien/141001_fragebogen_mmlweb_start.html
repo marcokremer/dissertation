@@ -1,0 +1,89 @@
+<html>
+<head>
+<title>Fragebogen Experiment</title>
+<link rel="stylesheet" href="mlweb.css" type="text/css">
+<script language="javascript">
+
+if (navigator.cookieEnabled == true) {} 
+else{alert("Für diese Seite müssen Cookies aktiviert sein!");}
+
+function startExp(formlink)
+{
+// get values from form
+var subject = formlink.subject.value;
+var cookie_text=document.cookie;
+var semikolon=cookie_text.indexOf(";");
+
+//Festlegung von Version ("version") und Zuweisung Zeile/Spalte-Spieler ("transf")
+var version="";
+var transf="";
+var zufall=Math.random();
+var zufall_2=Math.random();
+
+if (zufall<1/3){version="v1";}
+if (zufall>1/3 && zufall<2/3){version="v2";}
+if (zufall>2/3){version="v3";}
+if (zufall_2<1/2){transf="Z";}
+else{transf="S";}
+
+if(version=="v1"){nextURL = "Instruktionen1.php";}
+if(version=="v2"){nextURL = "Instruktionen2.php";}
+if(version=="v3"){nextURL = "Instruktionen3.php";}
+
+document.Fragebogen.expversion.value=version;
+document.Fragebogen.trans.value=transf;
+document.Fragebogen.nextURL.value=nextURL;
+document.Fragebogen.naviinfo.value=navigator.appName+" "+navigator.appVersion;
+document.Fragebogen.quelle.value=cookie_text.slice(0,semikolon+2);
+//alert(document.Fragebogen.naviinfo.value);
+// set cookies
+document.cookie=subject+","+version+","+transf;
+//alert(document.cookie);
+}
+
+function checkForm(formlink)
+{
+var subject1 = formlink.subject.value;
+//alert(subject);
+if (subject1.indexOf(",")>-1){alert("Zeichen \",\" bei Namenswahl nicht erlaubt. Bitte gib einen anderen Namen an!"); 
+return false;}else
+{startExp(formlink);}
+}
+</script>
+<style>
+#footer {
+    position:fixed;
+    bottom:0px;
+    font-size: 0.9em;
+    background:#fed; border: 1px solid silver;
+    text-align:center;
+    padding:0.1em;
+    width:100%;
+</style>
+</head>
+<body> 
+<h1>Fragebogen</h1><br>
+<form name="Fragebogen" onsubmit="return checkForm(this)" action="141001_fragebogen_msave.php" method="POST" accept-charset=utf-8>
+<input type=hidden name="nextURL" value=nextURL>
+<input type=hidden name="expversion" value="">
+<input type=hidden name="trans" value="">
+<input type=hidden name="naviinfo" value="">
+<input type=hidden name="quelle" value="">
+<TABLE border="1"><TR><TD><b>1. Angaben zur Person</b><br />1.1 Geschlecht: <select name="sex" size="1"><option>m</option><option>w</option></select><br />
+1.2 Alter: <INPUT type="text" name="age" size="3" maxlength="2"/><i> Jahre</i></td></tr>
+<TR><TD><b>2. Angaben zur Ausbildung</b><br/>2.1 Höchster Bildungsabschluss: <select name="Schulabschluss" size="1"><option value="ka">keinen/andere</option><option value="HS">Hauptschulabschluss</option>
+<option value="erwHS">erw. Hauptschulabschluss</option><option value="mR">mittlere Reife</option><option value="Abi">(Fach-)Hochschulreife</option><option value="Studi">(noch im) Studium</option>
+<option disabled="disabled" value="akademischer_Grad">---akademischer Grad---</option><option value="Promo">Promotion</option><option value="Habil">Habilitation</option></select><br>
+2.2 Lehre/Ausbildung/Studiengang: <input name="Ausbildung" type="text" id="Ausbildung">, dabei Kurs "Spieltheorie" besucht.<input name="ST" type="checkbox" id="ST" value="ja"></TD></TR>
+<TR><TD><b>3. Angaben zur momentanen Tätigkeit</b><br/>
+3.1 Ausgeübter Beruf: <TABLE><TR><TD><input name="job" type="radio" id="Beruf0", value="Soldat">Soldat</TD><TD><input name="job" type="radio" id="Beruf1", value="Sonst.">Sonst.</TD></TR>
+<TR><TD><select name="Status" size="1"><option value=""></option><option value="FWDL">FWDL</option><option value="SaZ">SaZ</option><option value="BS">BS</option></TD><TD>und zwar <input name="sonstjob" type="text" id="sonstjob"></TD></TR>
+<TR><TD>Einsatzerfahrung<input name="Einsatz" type="checkbox" id="ST" value="ja"> mit &asymp; <input name="Einsatztage" type="text" id="Einsatztagen" size="4"  maxlength="4"> Einsatztagen.</TD></TR>
+</TABLE></TD></TR></TABLE>
+<TABLE><TR><TD>Wähle jetzt noch einen Spielernamen:</TD><TD><input name="subject" type="text" id="subject"></TD><TD> * Gib in dieses Feld einen Namen deiner Wahl ein, mit dem du dich später im Ranking wiederfinden kannst.</TD></TR><br>
+<!--<TD colspan=3><br>*Übrigens, wenn du den Fragebogen schon einmal ausgefüllt hast, kannst du sofort starten.</TD>--!>
+<TR><TD colspan=2><input type="submit" name="submit" value="zu den Instruktionen"></TD></TR></TABLE>
+</form>
+<div id="footer">- Autor: Dipl.-Wi.-Ing. Marco Kremer -<br> Datenschutzerklärung: Deine Angaben werden streng vertraulich und völlig anonym erfasst. Sie dienen ausschließlich wissenschaftlichen Zielen und werden in keinem Fall veräußert oder unautorisierten Dritten zur Verfügung gestellt. Die Erhebung der IP-Adresse dient ausschließlich statistischen Zwecken und wird in keinem Fall darauf verwendet, am Experiment teilnehmende Personen namentlich zu identifizieren. Sämtliche in Deutschland geltenden Gesetze bezüglich des Datenschutzes werden eingehalten. Für den Einhalt des Datenschutzes und für sämtliche Inhalte dieses Experiments ist der Autor verantwortlich.<br>Infos bitte an: <a href=mailto:ZeitdruckExp@hsu-hh.de>ZeitdruckExp@hsu-hh.de</a></div>
+</body>
+</html>
