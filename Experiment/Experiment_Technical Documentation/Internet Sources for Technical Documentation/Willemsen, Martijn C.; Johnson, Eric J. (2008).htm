@@ -1,0 +1,69 @@
+<html>
+<head>
+<title>Mouselab WEB</title>
+<link rel="stylesheet" href="mlwebsite.css" type="text/css">
+<style type="text/css">
+<!--
+.style1 {
+	color: #FF0000;
+	font-weight: bold;
+}
+.style2 {color: #FF0000}
+-->
+</style>
+</head>
+<body> 
+<div id="masthead"> 
+  <h1 id="siteName">MouselabWEB</h1> 
+<div id="globalNav"> 
+  <a href="index.html">Home</a> | <a href="demopage.html">Demo Page</a> | <a href="designer.html">MouselabWeb Designer </a> | <a href="applications.html"> Applications</a> | <a href="forum.html"> Forum</a>|<a href="faq.html"> FAQ</a> | <a href="technotes.html">Technical Notes</a> | <a href="register.php">Registration</a>| <a href="download.php">Downloads (restricted) </a> </div>
+</div>
+<!-- end masthead --> 
+<div id="content"> 
+<h2 ID="pageName">Login to downloads page</h2>
+<p class="style1"></P>
+<form action="download.php" method="post" name="regform">
+<table>
+  <tr>
+    <td>email:</td>
+    <td><input name="email" type="text" size="15" value=""></td>
+  </tr>
+  <tr>
+    <td>password:</td>
+    <td><input name="password" type="password" size="15" value=""></td>
+  </tr>
+  <tr><td colspan=2><input name="submit" type="submit" value="Login"></td></tr>
+</table>
+<P>Login information will be saved for 30 days in a cookie</P>
+</form>
+<form action="download.php" method="post" name="newpassform">
+<P>Have you forgotten your password? Give your lastname or email and we will send you a new password.</P>
+<p class="style1"></P>
+<table>
+  <tr>
+    <td>lastname:</td>
+    <td><input name="lastname" type="text" size="30" value=""></td>
+  </tr>
+  <tr>
+    <td>or email:</td>
+    <td><input name="email" type="text" size="30" value=""></td>
+  </tr>
+  <tr><td colspan=2><input name="submit" type="submit" value="Request password"></td></tr>
+</table>
+</form>
+</div> 
+<div id="siteInfo">  <a href="authors.html">About Us</a> | <a href="contact.html">Contact Us</a> | &copy; Martijn Willemsen &amp; Eric Johnson 
+</div> 
+<br> 
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-451506-2");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>
+
