@@ -28,7 +28,7 @@ The content of the file „Experiment“ is:
 
 # Directory Tree
 
-'''bash
+```
 .
 ├── Appendizes Information
 │   ├── Appendix C_Simulation_Ranking Tables
@@ -101,4 +101,4 @@ The content of the file „Experiment“ is:
             │   └── alt
             ├── figures
             └── general EIP_SIM
-'''
+```
